@@ -1,0 +1,56 @@
+.notifications {
+  display: flex;
+  flex-direction: column;
+}
+
+.notifications__notification {
+  width: 80%;
+  margin-left: auto;
+  background-color: white;
+  display: flex;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  overflow: hidden;
+
+  &--added {
+    .notifications__colorbar {
+      background-color: $green;
+    }    
+  }
+
+  &--removed {
+    .notifications__colorbar {
+      background-color: $red;
+    }    
+  }
+
+  &--completed {
+    .notifications__colorbar {
+      background-color: $brown--dark;
+    }    
+  }
+}
+
+.notifications__colorbar {
+  min-height: 100%;
+  width: 0.5rem;
+  background-color: black;
+}
+
+.notifications__item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.notifications__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700; 
+}
+
+.notifications__datetime {
+  margin-top: 1rem;
+}

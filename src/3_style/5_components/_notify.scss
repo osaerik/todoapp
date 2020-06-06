@@ -1,0 +1,18 @@
+.notify {
+  position: relative;
+
+  &__nr {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    border-radius: 50% 50%;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: white;
+    color: $red;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+  }
+}

@@ -1,0 +1,57 @@
+@import '../1_settings/';
+
+.icon {
+  position: relative;
+  display: block;
+  background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon--logo {
+  background-image: url('/assets/logo.png');
+  width: 6rem;
+  height: 6rem;
+}
+
+.icon--notify {
+  background-image: url('/assets/bell.png');
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon--check {
+  width: $lineheight;
+  height: $lineheight;
+  border-radius: 50% 50%;
+  background: $green;
+  color: white;
+  background-image: url('/assets/check.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  margin: 0 0.5rem;
+}
+
+.icon--check-disabled {
+  background-color: $green--light;
+}
+
+.icon--cross {
+  width: $lineheight;
+  height: $lineheight;
+  border-radius: 50% 50%;
+  background: $red;
+  color: white;
+  background-image: url('/assets/close.svg');
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+
+.icon--close {
+  mask: url('/assets/close.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $brown--dark;
+}

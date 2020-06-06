@@ -1,0 +1,17 @@
+.homepage {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100%;
+
+  &__todolist {
+    margin: auto;
+    margin-top: 4rem;
+    width: 50%;
+    margin-right: 2rem;
+  }
+
+  &__notifications {
+    width: 25%;    
+  }
+}

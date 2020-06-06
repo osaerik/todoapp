@@ -1,0 +1,68 @@
+@import '../../1_settings/';
+
+.todo__header {
+  width: 100%;
+  text-align: center;
+}
+
+.todo__main {
+  margin-top: 1rem;
+  background: white;
+  padding: 2rem;
+}
+
+.todo__add {
+  display: flex;
+}
+
+.todo__add-input {
+  padding: 0.2rem;
+  flex: 1;
+  outline: 0;
+  border-top-left-radius: 18px 50%;
+  border-top-right-radius: 18px 50%;
+  border-bottom-right-radius: 18px 50%;
+  border-bottom-left-radius: 18px 50%;
+}
+
+.todo__add-button {
+  background-color: $brown--dark;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 1rem;
+  border-radius: 18px;
+}
+
+.todo__list {
+  margin-top: 2rem;
+}
+
+.todo__list-item {
+  display: flex;
+  width: 100%;;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid black;
+
+  &-text {
+    flex: 1;
+    line-height: $lineheight;
+  }
+}
+
+.todo__show-done {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+
+  &-subtext {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+  
+  &-toggle {
+    margin: auto;
+    margin-right: 0;
+  }
+}

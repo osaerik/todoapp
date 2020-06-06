@@ -1,0 +1,13 @@
+// used with preprocessors and contain font, colors definitions, etc.
+
+@import './colors';
+@import './todo';
+
+$font-size: 16px;
+$font-family: sans-serif;
+
+$screen-xs: 320px;
+$screen-s: 460px;
+$screen-m: 768px;
+$screen-l: 1024px;
+$screen-xl: 1366px;

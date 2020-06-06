@@ -1,0 +1,52 @@
+$buttonheight: 1.3rem;
+$buttonwidth: 3rem;
+$toggle-enlargement: 0.4rem;
+
+.button--icon {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  &:focus, &:active  {
+    outline: 0;
+  }
+}
+
+.button--toggle {
+  position: relative;
+  outline: 0; 
+  border: 1px solid transparent;
+  border-top-left-radius: 12px 50%;
+  border-top-right-radius: 12px 50%;
+  border-bottom-right-radius: 12px 50%;
+  border-bottom-left-radius: 12px 50%;
+  height: $buttonheight;
+  width: $buttonwidth;  
+  background: rgba(157,250,207,1);  //$green--light;
+
+  &:after {
+    content: '';
+    display: inline-block;
+    width: $buttonheight + $toggle-enlargement;
+    height: $buttonheight + $toggle-enlargement;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background-color: $green;
+    position: absolute;
+    top: $toggle-enlargement / -2;
+    right: $toggle-enlargement / -2;
+    transition: 0.2s;
+  }
+
+  &:focus, &:active  {
+    outline: 0;
+  }
+
+  &-off {
+    background: rgba(157,250,207,0.3);
+
+    &:after {
+      transform: translate(-$buttonwidth + ($buttonheight), 0) ;  
+    }
+  }
+}
